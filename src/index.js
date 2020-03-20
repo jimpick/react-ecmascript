@@ -63,6 +63,7 @@ function getModuleStrings(importSourceUri = './') {
 
                 // select the part we want to replace in the target with the part of the source AST
                 // and copy the functionExpression over to it
+                // console.log('Jim program', resolvedSourceFile, JSON.stringify(targtetAst.program, null, 2))
                 walk(targtetAst.program, targetSelectSteps).callee = functionExpression;
 
                 if (importSelectSteps && importFilename) {

@@ -24,10 +24,8 @@ module.exports = {
   ],
   targetSelectSteps: [
     o => o.body,
-    o => (o.type === 'VariableDeclaration' ? o : false),
-    o => o.declarations,
-    o => (o.type === 'VariableDeclarator' ? o : false),
-    o => o.init,
+    o => (o.type === 'ExpressionStatement' ? o : false),
+    o => o.expression,
     o => (o.type === 'CallExpression' ? o : false)
   ]
 };

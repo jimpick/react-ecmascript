@@ -9,9 +9,10 @@ import React from 'react';
  * LICENSE file in the root directory of this source tree.
  */
 
-const ReactDOM = (function() {
+const ReactDOM = {};
+(function() {
 
-}(React));
+}(ReactDOM, React));
 const {@@exports@@} = ReactDOM;
 export default ReactDOM;
 export {@@exports@@};

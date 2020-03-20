@@ -7,9 +7,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const React = (function() {
+const React = {};
+(function() {
 
-})();
+})(React);
 const {@@exports@@} = React;
 export default React;
 export {@@exports@@};
